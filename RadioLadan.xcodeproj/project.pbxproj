@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C0AEFC1EAD1BFE0082B4F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AEFB1EAD1BFE0082B4F2 /* AppDelegate.swift */; };
+		18C0AEFE1EAD1BFE0082B4F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AEFD1EAD1BFE0082B4F2 /* ViewController.swift */; };
+		18C0AF011EAD1BFE0082B4F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C0AEFF1EAD1BFE0082B4F2 /* Main.storyboard */; };
+		18C0AF031EAD1BFE0082B4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C0AF021EAD1BFE0082B4F2 /* Assets.xcassets */; };
+		18C0AF061EAD1BFE0082B4F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C0AF041EAD1BFE0082B4F2 /* LaunchScreen.storyboard */; };
+		18C0AF111EAD1BFE0082B4F2 /* RadioLadanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AF101EAD1BFE0082B4F2 /* RadioLadanTests.swift */; };
+		18C0AF1C1EAD1BFE0082B4F2 /* RadioLadanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AF1B1EAD1BFE0082B4F2 /* RadioLadanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C0AF0D1EAD1BFE0082B4F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C0AEF01EAD1BFE0082B4F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C0AEF71EAD1BFE0082B4F2;
+			remoteInfo = RadioLadan;
+		};
+		18C0AF181EAD1BFE0082B4F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C0AEF01EAD1BFE0082B4F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C0AEF71EAD1BFE0082B4F2;
+			remoteInfo = RadioLadan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C0AEF81EAD1BFE0082B4F2 /* RadioLadan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioLadan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C0AEFB1EAD1BFE0082B4F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18C0AEFD1EAD1BFE0082B4F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C0AF001EAD1BFE0082B4F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C0AF021EAD1BFE0082B4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C0AF051EAD1BFE0082B4F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C0AF071EAD1BFE0082B4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C0AF0C1EAD1BFE0082B4F2 /* RadioLadanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioLadanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C0AF101EAD1BFE0082B4F2 /* RadioLadanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioLadanTests.swift; sourceTree = "<group>"; };
+		18C0AF121EAD1BFE0082B4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C0AF171EAD1BFE0082B4F2 /* RadioLadanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioLadanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C0AF1B1EAD1BFE0082B4F2 /* RadioLadanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioLadanUITests.swift; sourceTree = "<group>"; };
+		18C0AF1D1EAD1BFE0082B4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C0AEF51EAD1BFE0082B4F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF091EAD1BFE0082B4F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF141EAD1BFE0082B4F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C0AEEF1EAD1BFE0082B4F2 = {
+			isa = PBXGroup;
+			children = (
+				18C0AEFA1EAD1BFE0082B4F2 /* RadioLadan */,
+				18C0AF0F1EAD1BFE0082B4F2 /* RadioLadanTests */,
+				18C0AF1A1EAD1BFE0082B4F2 /* RadioLadanUITests */,
+				18C0AEF91EAD1BFE0082B4F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C0AEF91EAD1BFE0082B4F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C0AEF81EAD1BFE0082B4F2 /* RadioLadan.app */,
+				18C0AF0C1EAD1BFE0082B4F2 /* RadioLadanTests.xctest */,
+				18C0AF171EAD1BFE0082B4F2 /* RadioLadanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C0AEFA1EAD1BFE0082B4F2 /* RadioLadan */ = {
+			isa = PBXGroup;
+			children = (
+				18C0AEFB1EAD1BFE0082B4F2 /* AppDelegate.swift */,
+				18C0AEFD1EAD1BFE0082B4F2 /* ViewController.swift */,
+				18C0AEFF1EAD1BFE0082B4F2 /* Main.storyboard */,
+				18C0AF021EAD1BFE0082B4F2 /* Assets.xcassets */,
+				18C0AF041EAD1BFE0082B4F2 /* LaunchScreen.storyboard */,
+				18C0AF071EAD1BFE0082B4F2 /* Info.plist */,
+			);
+			path = RadioLadan;
+			sourceTree = "<group>";
+		};
+		18C0AF0F1EAD1BFE0082B4F2 /* RadioLadanTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C0AF101EAD1BFE0082B4F2 /* RadioLadanTests.swift */,
+				18C0AF121EAD1BFE0082B4F2 /* Info.plist */,
+			);
+			path = RadioLadanTests;
+			sourceTree = "<group>";
+		};
+		18C0AF1A1EAD1BFE0082B4F2 /* RadioLadanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18C0AF1B1EAD1BFE0082B4F2 /* RadioLadanUITests.swift */,
+				18C0AF1D1EAD1BFE0082B4F2 /* Info.plist */,
+			);
+			path = RadioLadanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C0AEF71EAD1BFE0082B4F2 /* RadioLadan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C0AF201EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadan" */;
+			buildPhases = (
+				18C0AEF41EAD1BFE0082B4F2 /* Sources */,
+				18C0AEF51EAD1BFE0082B4F2 /* Frameworks */,
+				18C0AEF61EAD1BFE0082B4F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioLadan;
+			productName = RadioLadan;
+			productReference = 18C0AEF81EAD1BFE0082B4F2 /* RadioLadan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C0AF0B1EAD1BFE0082B4F2 /* RadioLadanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C0AF231EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadanTests" */;
+			buildPhases = (
+				18C0AF081EAD1BFE0082B4F2 /* Sources */,
+				18C0AF091EAD1BFE0082B4F2 /* Frameworks */,
+				18C0AF0A1EAD1BFE0082B4F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C0AF0E1EAD1BFE0082B4F2 /* PBXTargetDependency */,
+			);
+			name = RadioLadanTests;
+			productName = RadioLadanTests;
+			productReference = 18C0AF0C1EAD1BFE0082B4F2 /* RadioLadanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18C0AF161EAD1BFE0082B4F2 /* RadioLadanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C0AF261EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadanUITests" */;
+			buildPhases = (
+				18C0AF131EAD1BFE0082B4F2 /* Sources */,
+				18C0AF141EAD1BFE0082B4F2 /* Frameworks */,
+				18C0AF151EAD1BFE0082B4F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C0AF191EAD1BFE0082B4F2 /* PBXTargetDependency */,
+			);
+			name = RadioLadanUITests;
+			productName = RadioLadanUITests;
+			productReference = 18C0AF171EAD1BFE0082B4F2 /* RadioLadanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C0AEF01EAD1BFE0082B4F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MHDY;
+				TargetAttributes = {
+					18C0AEF71EAD1BFE0082B4F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FGG7GRA53N;
+						ProvisioningStyle = Automatic;
+					};
+					18C0AF0B1EAD1BFE0082B4F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FGG7GRA53N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18C0AEF71EAD1BFE0082B4F2;
+					};
+					18C0AF161EAD1BFE0082B4F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FGG7GRA53N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18C0AEF71EAD1BFE0082B4F2;
+					};
+				};
+			};
+			buildConfigurationList = 18C0AEF31EAD1BFE0082B4F2 /* Build configuration list for PBXProject "RadioLadan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C0AEEF1EAD1BFE0082B4F2;
+			productRefGroup = 18C0AEF91EAD1BFE0082B4F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C0AEF71EAD1BFE0082B4F2 /* RadioLadan */,
+				18C0AF0B1EAD1BFE0082B4F2 /* RadioLadanTests */,
+				18C0AF161EAD1BFE0082B4F2 /* RadioLadanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C0AEF61EAD1BFE0082B4F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C0AF061EAD1BFE0082B4F2 /* LaunchScreen.storyboard in Resources */,
+				18C0AF031EAD1BFE0082B4F2 /* Assets.xcassets in Resources */,
+				18C0AF011EAD1BFE0082B4F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF0A1EAD1BFE0082B4F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF151EAD1BFE0082B4F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C0AEF41EAD1BFE0082B4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C0AEFE1EAD1BFE0082B4F2 /* ViewController.swift in Sources */,
+				18C0AEFC1EAD1BFE0082B4F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF081EAD1BFE0082B4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C0AF111EAD1BFE0082B4F2 /* RadioLadanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C0AF131EAD1BFE0082B4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C0AF1C1EAD1BFE0082B4F2 /* RadioLadanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C0AF0E1EAD1BFE0082B4F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C0AEF71EAD1BFE0082B4F2 /* RadioLadan */;
+			targetProxy = 18C0AF0D1EAD1BFE0082B4F2 /* PBXContainerItemProxy */;
+		};
+		18C0AF191EAD1BFE0082B4F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C0AEF71EAD1BFE0082B4F2 /* RadioLadan */;
+			targetProxy = 18C0AF181EAD1BFE0082B4F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C0AEFF1EAD1BFE0082B4F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C0AF001EAD1BFE0082B4F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C0AF041EAD1BFE0082B4F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C0AF051EAD1BFE0082B4F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C0AF1E1EAD1BFE0082B4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18C0AF1F1EAD1BFE0082B4F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C0AF211EAD1BFE0082B4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18C0AF221EAD1BFE0082B4F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		18C0AF241EAD1BFE0082B4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioLadan.app/RadioLadan";
+			};
+			name = Debug;
+		};
+		18C0AF251EAD1BFE0082B4F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioLadan.app/RadioLadan";
+			};
+			name = Release;
+		};
+		18C0AF271EAD1BFE0082B4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RadioLadan;
+			};
+			name = Debug;
+		};
+		18C0AF281EAD1BFE0082B4F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FGG7GRA53N;
+				INFOPLIST_FILE = RadioLadanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RadioLadan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C0AEF31EAD1BFE0082B4F2 /* Build configuration list for PBXProject "RadioLadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C0AF1E1EAD1BFE0082B4F2 /* Debug */,
+				18C0AF1F1EAD1BFE0082B4F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C0AF201EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C0AF211EAD1BFE0082B4F2 /* Debug */,
+				18C0AF221EAD1BFE0082B4F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C0AF231EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C0AF241EAD1BFE0082B4F2 /* Debug */,
+				18C0AF251EAD1BFE0082B4F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C0AF261EAD1BFE0082B4F2 /* Build configuration list for PBXNativeTarget "RadioLadanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C0AF271EAD1BFE0082B4F2 /* Debug */,
+				18C0AF281EAD1BFE0082B4F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C0AEF01EAD1BFE0082B4F2 /* Project object */;
+}

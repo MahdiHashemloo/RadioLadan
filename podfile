@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.1’
+target 'RadioLadan' do
+use_frameworks! 
+pod 'ImageSlideshow'
+pod 'Alamofire'
+pod 'ObjectMapper'
+pod 'AlamofireObjectMapper'
+pod 'Kingfisher'
+pod "ImageSlideshow/Kingfisher"
+pod 'Jukebox'
+pod 'NVActivityIndicatorView'
+pod 'Segmentio', '~> 2.1'
+end

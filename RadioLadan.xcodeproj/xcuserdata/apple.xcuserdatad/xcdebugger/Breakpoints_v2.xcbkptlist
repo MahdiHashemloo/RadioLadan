@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RadioLadan/VitrinCell.swift"
-            timestampString = "515184398.778386"
+            timestampString = "519330907.484812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>

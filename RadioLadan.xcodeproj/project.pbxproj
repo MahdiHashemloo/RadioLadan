@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806EBAC1ED13E5B00ED6828 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806EBAB1ED13E5B00ED6828 /* ProfileController.swift */; };
+		1806EBAE1ED144CE00ED6828 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 1806EBAD1ED144CE00ED6828 /* profile.png */; };
 		1808184D1EBE405800888934 /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808184C1EBE405800888934 /* PlayListController.swift */; };
 		180818501EBE410600888934 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808184F1EBE410600888934 /* PlayListCell.swift */; };
-		180818521EBEBBDE00888934 /* akhar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180818511EBEBBDE00888934 /* akhar.mp3 */; };
+		182A107A1EE4209B004DFDF6 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A10791EE4209B004DFDF6 /* CommentsViewController.swift */; };
+		182A107C1EE420FE004DFDF6 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A107B1EE420FE004DFDF6 /* CommentCell.swift */; };
+		182A107E1EE48861004DFDF6 /* NewCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A107D1EE48861004DFDF6 /* NewCommentController.swift */; };
+		1843C2711EEB306F0060939D /* JukeBoxClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843C2701EEB306F0060939D /* JukeBoxClass.swift */; };
+		18502EAF1EFD62FA002B1C09 /* PlayItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18502EAE1EFD62FA002B1C09 /* PlayItemObject.swift */; };
 		187503491EAF2B5500AF0A26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187503481EAF2B5500AF0A26 /* HomeViewController.swift */; };
 		1875034C1EAF2D2B00AF0A26 /* VitrinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875034B1EAF2D2B00AF0A26 /* VitrinCell.swift */; };
 		187503501EAF315400AF0A26 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875034F1EAF315400AF0A26 /* CollectionViewCell.swift */; };
@@ -24,6 +30,7 @@
 		18928BFA1EB663EB00982C8B /* SubListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18928BF91EB663EB00982C8B /* SubListCell.swift */; };
 		18928BFD1EB6856300982C8B /* HeaderSelectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18928BFC1EB6856300982C8B /* HeaderSelectedController.swift */; };
 		18928BFF1EB6857900982C8B /* HeaderSelecedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18928BFE1EB6857900982C8B /* HeaderSelecedCell.swift */; };
+		18A49D801EE95002004E1DF2 /* IRAN_Sans_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18A49D7F1EE95002004E1DF2 /* IRAN_Sans_Bold.ttf */; };
 		18AAAF951EC5B8F100191355 /* CatListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAAF941EC5B8F100191355 /* CatListItemController.swift */; };
 		18AAAF971EC5B91000191355 /* CatItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAAF961EC5B91000191355 /* CatItemCell.swift */; };
 		18C0AEFC1EAD1BFE0082B4F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AEFB1EAD1BFE0082B4F2 /* AppDelegate.swift */; };
@@ -32,10 +39,23 @@
 		18C0AF061EAD1BFE0082B4F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C0AF041EAD1BFE0082B4F2 /* LaunchScreen.storyboard */; };
 		18C0AF111EAD1BFE0082B4F2 /* RadioLadanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AF101EAD1BFE0082B4F2 /* RadioLadanTests.swift */; };
 		18C0AF1C1EAD1BFE0082B4F2 /* RadioLadanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0AF1B1EAD1BFE0082B4F2 /* RadioLadanUITests.swift */; };
+		18CB99CD1EE19B6F006CC669 /* ICrasuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB99CC1EE19B6F006CC669 /* ICrasuelViewController.swift */; };
+		18CB99D11EE19C6D006CC669 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB99D01EE19C6D006CC669 /* iCarousel.m */; };
 		18D5498E1EB20644009BCD15 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5498D1EB20644009BCD15 /* testViewController.swift */; };
 		18DC30981EBD0F4900ABEC8A /* IRANSans(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18DC30971EBD0F4900ABEC8A /* IRANSans(FaNum)_Light.ttf */; };
+		18E991F41EE5B327005EC774 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E991F31EE5B327005EC774 /* SearchViewController.swift */; };
+		18E991F61EE5B355005EC774 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E991F51EE5B355005EC774 /* SearchCell.swift */; };
 		18F7C38D1EBAFA67002AF4AA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C38C1EBAFA67002AF4AA /* PlayerViewController.swift */; };
 		18F7C3911EBAFFD7002AF4AA /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C3901EBAFFD7002AF4AA /* PlayerCell.swift */; };
+		284686671F31DAF2000DB63C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284686661F31DAF2000DB63C /* BaseViewController.swift */; };
+		2846866A1F31E180000DB63C /* SublistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284686681F31E180000DB63C /* SublistTableViewCell.swift */; };
+		2846866B1F31E180000DB63C /* SublistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284686691F31E180000DB63C /* SublistTableViewCell.xib */; };
+		2846866E1F31E2AA000DB63C /* HeaderSublistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846866C1F31E2AA000DB63C /* HeaderSublistTableViewCell.swift */; };
+		2846866F1F31E2AA000DB63C /* HeaderSublistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2846866D1F31E2AA000DB63C /* HeaderSublistTableViewCell.xib */; };
+		289A54331F2BADE800C71F0E /* RecorderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A54321F2BADE800C71F0E /* RecorderController.swift */; };
+		289A54351F2BCF0F00C71F0E /* RecordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A54341F2BCF0F00C71F0E /* RecordsCell.swift */; };
+		28BE20D91F379A43002D6E59 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BE20D81F379A43002D6E59 /* PlayListViewController.swift */; };
+		28F563BD1ED921CA005B6A32 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F563BC1ED921CA005B6A32 /* ProfileCollectionViewCell.swift */; };
 		8CB1440C5347998F07BBD893 /* Pods_RadioLadan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1339E5A7CAB8CCC5E11AFF35 /* Pods_RadioLadan.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +78,15 @@
 
 /* Begin PBXFileReference section */
 		1339E5A7CAB8CCC5E11AFF35 /* Pods_RadioLadan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioLadan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1806EBAB1ED13E5B00ED6828 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		1806EBAD1ED144CE00ED6828 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		1808184C1EBE405800888934 /* PlayListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListController.swift; sourceTree = "<group>"; };
 		1808184F1EBE410600888934 /* PlayListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
-		180818511EBEBBDE00888934 /* akhar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = akhar.mp3; sourceTree = "<group>"; };
+		182A10791EE4209B004DFDF6 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		182A107B1EE420FE004DFDF6 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		182A107D1EE48861004DFDF6 /* NewCommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCommentController.swift; sourceTree = "<group>"; };
+		1843C2701EEB306F0060939D /* JukeBoxClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JukeBoxClass.swift; sourceTree = "<group>"; };
+		18502EAE1EFD62FA002B1C09 /* PlayItemObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayItemObject.swift; sourceTree = "<group>"; };
 		187503481EAF2B5500AF0A26 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1875034B1EAF2D2B00AF0A26 /* VitrinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitrinCell.swift; sourceTree = "<group>"; };
 		1875034F1EAF315400AF0A26 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +101,7 @@
 		18928BF91EB663EB00982C8B /* SubListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubListCell.swift; sourceTree = "<group>"; };
 		18928BFC1EB6856300982C8B /* HeaderSelectedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSelectedController.swift; sourceTree = "<group>"; };
 		18928BFE1EB6857900982C8B /* HeaderSelecedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSelecedCell.swift; sourceTree = "<group>"; };
+		18A49D7F1EE95002004E1DF2 /* IRAN_Sans_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRAN_Sans_Bold.ttf; sourceTree = "<group>"; };
 		18AAAF941EC5B8F100191355 /* CatListItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatListItemController.swift; sourceTree = "<group>"; };
 		18AAAF961EC5B91000191355 /* CatItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatItemCell.swift; sourceTree = "<group>"; };
 		18C0AEF81EAD1BFE0082B4F2 /* RadioLadan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioLadan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,10 +116,25 @@
 		18C0AF171EAD1BFE0082B4F2 /* RadioLadanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioLadanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C0AF1B1EAD1BFE0082B4F2 /* RadioLadanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioLadanUITests.swift; sourceTree = "<group>"; };
 		18C0AF1D1EAD1BFE0082B4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CB99CC1EE19B6F006CC669 /* ICrasuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICrasuelViewController.swift; sourceTree = "<group>"; };
+		18CB99CE1EE19C69006CC669 /* RadioLadan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioLadan-Bridging-Header.h"; sourceTree = "<group>"; };
+		18CB99CF1EE19C6D006CC669 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		18CB99D01EE19C6D006CC669 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		18D5498D1EB20644009BCD15 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		18DC30971EBD0F4900ABEC8A /* IRANSans(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum)_Light.ttf"; sourceTree = "<group>"; };
+		18E991F31EE5B327005EC774 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		18E991F51EE5B355005EC774 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		18F7C38C1EBAFA67002AF4AA /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		18F7C3901EBAFFD7002AF4AA /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		284686661F31DAF2000DB63C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		284686681F31E180000DB63C /* SublistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SublistTableViewCell.swift; sourceTree = "<group>"; };
+		284686691F31E180000DB63C /* SublistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SublistTableViewCell.xib; sourceTree = "<group>"; };
+		2846866C1F31E2AA000DB63C /* HeaderSublistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSublistTableViewCell.swift; sourceTree = "<group>"; };
+		2846866D1F31E2AA000DB63C /* HeaderSublistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderSublistTableViewCell.xib; sourceTree = "<group>"; };
+		289A54321F2BADE800C71F0E /* RecorderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderController.swift; sourceTree = "<group>"; };
+		289A54341F2BCF0F00C71F0E /* RecordsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsCell.swift; sourceTree = "<group>"; };
+		28BE20D81F379A43002D6E59 /* PlayListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		28F563BC1ED921CA005B6A32 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		C607900463E8AE1031241A38 /* Pods-RadioLadan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioLadan.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioLadan/Pods-RadioLadan.release.xcconfig"; sourceTree = "<group>"; };
 		C75C2B6743D919EED96F34BB /* Pods-RadioLadan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioLadan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioLadan/Pods-RadioLadan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,21 +169,49 @@
 			isa = PBXGroup;
 			children = (
 				1808184C1EBE405800888934 /* PlayListController.swift */,
+				28BE20D81F379A43002D6E59 /* PlayListViewController.swift */,
 				1808184F1EBE410600888934 /* PlayListCell.swift */,
 			);
 			name = playList;
 			sourceTree = "<group>";
 		};
+		182A10781EE42078004DFDF6 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				182A10791EE4209B004DFDF6 /* CommentsViewController.swift */,
+				182A107B1EE420FE004DFDF6 /* CommentCell.swift */,
+				182A107D1EE48861004DFDF6 /* NewCommentController.swift */,
+			);
+			name = comment;
+			sourceTree = "<group>";
+		};
+		18502EAD1EFD62B9002B1C09 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				18502EAE1EFD62FA002B1C09 /* PlayItemObject.swift */,
+			);
+			name = object;
+			sourceTree = "<group>";
+		};
 		1875034A1EAF2B6100AF0A26 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				18CB99CC1EE19B6F006CC669 /* ICrasuelViewController.swift */,
+				1843C2701EEB306F0060939D /* JukeBoxClass.swift */,
 				187503481EAF2B5500AF0A26 /* HomeViewController.swift */,
 				1875034B1EAF2D2B00AF0A26 /* VitrinCell.swift */,
 				1875034F1EAF315400AF0A26 /* CollectionViewCell.swift */,
 				187503511EAF385A00AF0A26 /* HeaderTableViewCell.swift */,
 				18D5498D1EB20644009BCD15 /* testViewController.swift */,
-				180818511EBEBBDE00888934 /* akhar.mp3 */,
+				18CB99CF1EE19C6D006CC669 /* iCarousel.h */,
+				18CB99D01EE19C6D006CC669 /* iCarousel.m */,
 				18928BF81EB663CA00982C8B /* sublistCell */,
+				18CB99CE1EE19C69006CC669 /* RadioLadan-Bridging-Header.h */,
+				284686661F31DAF2000DB63C /* BaseViewController.swift */,
+				284686681F31E180000DB63C /* SublistTableViewCell.swift */,
+				284686691F31E180000DB63C /* SublistTableViewCell.xib */,
+				2846866C1F31E2AA000DB63C /* HeaderSublistTableViewCell.swift */,
+				2846866D1F31E2AA000DB63C /* HeaderSublistTableViewCell.xib */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -219,7 +289,12 @@
 			children = (
 				18C0AEFB1EAD1BFE0082B4F2 /* AppDelegate.swift */,
 				187503611EAFB4A200AF0A26 /* UtilityClass.swift */,
+				1806EBAB1ED13E5B00ED6828 /* ProfileController.swift */,
+				28F563BC1ED921CA005B6A32 /* ProfileCollectionViewCell.swift */,
 				18DC30971EBD0F4900ABEC8A /* IRANSans(FaNum)_Light.ttf */,
+				18A49D7F1EE95002004E1DF2 /* IRAN_Sans_Bold.ttf */,
+				18C0AEFF1EAD1BFE0082B4F2 /* Main.storyboard */,
+				18C0AF021EAD1BFE0082B4F2 /* Assets.xcassets */,
 				187503561EAF3D6000AF0A26 /* start */,
 				1875034A1EAF2B6100AF0A26 /* home */,
 				187503531EAF3CE300AF0A26 /* Network */,
@@ -227,8 +302,11 @@
 				1808184E1EBE406300888934 /* playList */,
 				18928BFB1EB684CC00982C8B /* selectHeaderController */,
 				18AAAF931EC5B8BC00191355 /* categoryListItem */,
-				18C0AEFF1EAD1BFE0082B4F2 /* Main.storyboard */,
-				18C0AF021EAD1BFE0082B4F2 /* Assets.xcassets */,
+				182A10781EE42078004DFDF6 /* comment */,
+				18502EAD1EFD62B9002B1C09 /* object */,
+				289A54311F2BAD9B00C71F0E /* RecorderAndShare */,
+				18E991F21EE5B305005EC774 /* searchViewController */,
+				1806EBAD1ED144CE00ED6828 /* profile.png */,
 				18C0AF041EAD1BFE0082B4F2 /* LaunchScreen.storyboard */,
 				18C0AF071EAD1BFE0082B4F2 /* Info.plist */,
 			);
@@ -253,6 +331,15 @@
 			path = RadioLadanUITests;
 			sourceTree = "<group>";
 		};
+		18E991F21EE5B305005EC774 /* searchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E991F31EE5B327005EC774 /* SearchViewController.swift */,
+				18E991F51EE5B355005EC774 /* SearchCell.swift */,
+			);
+			name = searchViewController;
+			sourceTree = "<group>";
+		};
 		18F7C38B1EBAFA2E002AF4AA /* Player */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +347,15 @@
 				18F7C3901EBAFFD7002AF4AA /* PlayerCell.swift */,
 			);
 			name = Player;
+			sourceTree = "<group>";
+		};
+		289A54311F2BAD9B00C71F0E /* RecorderAndShare */ = {
+			isa = PBXGroup;
+			children = (
+				289A54321F2BADE800C71F0E /* RecorderController.swift */,
+				289A54341F2BCF0F00C71F0E /* RecordsCell.swift */,
+			);
+			name = RecorderAndShare;
 			sourceTree = "<group>";
 		};
 		749BCED7438A4CB696B98743 /* Pods */ = {
@@ -350,7 +446,8 @@
 				TargetAttributes = {
 					18C0AEF71EAD1BFE0082B4F2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FGG7GRA53N;
+						DevelopmentTeam = UJ8CH22PZU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					18C0AF0B1EAD1BFE0082B4F2 = {
@@ -392,10 +489,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2846866B1F31E180000DB63C /* SublistTableViewCell.xib in Resources */,
+				2846866F1F31E2AA000DB63C /* HeaderSublistTableViewCell.xib in Resources */,
 				18C0AF061EAD1BFE0082B4F2 /* LaunchScreen.storyboard in Resources */,
+				1806EBAE1ED144CE00ED6828 /* profile.png in Resources */,
 				18C0AF031EAD1BFE0082B4F2 /* Assets.xcassets in Resources */,
+				18A49D801EE95002004E1DF2 /* IRAN_Sans_Bold.ttf in Resources */,
 				18C0AF011EAD1BFE0082B4F2 /* Main.storyboard in Resources */,
-				180818521EBEBBDE00888934 /* akhar.mp3 in Resources */,
 				18DC30981EBD0F4900ABEC8A /* IRANSans(FaNum)_Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +544,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BDBCE1B23286D9D4A2EDAD34 /* [CP] Embed Pods Frameworks */ = {
@@ -469,28 +569,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E991F41EE5B327005EC774 /* SearchViewController.swift in Sources */,
 				18928BFF1EB6857900982C8B /* HeaderSelecedCell.swift in Sources */,
 				187503551EAF3D2100AF0A26 /* NetworkManager.swift in Sources */,
 				18C0AEFC1EAD1BFE0082B4F2 /* AppDelegate.swift in Sources */,
 				18AAAF951EC5B8F100191355 /* CatListItemController.swift in Sources */,
+				284686671F31DAF2000DB63C /* BaseViewController.swift in Sources */,
 				187503601EAF9CC100AF0A26 /* RecievingObjects.swift in Sources */,
+				18CB99D11EE19C6D006CC669 /* iCarousel.m in Sources */,
+				18502EAF1EFD62FA002B1C09 /* PlayItemObject.swift in Sources */,
 				187503521EAF385A00AF0A26 /* HeaderTableViewCell.swift in Sources */,
 				1875035C1EAF701C00AF0A26 /* GetInformationController.swift in Sources */,
+				28BE20D91F379A43002D6E59 /* PlayListViewController.swift in Sources */,
 				1875035A1EAF404D00AF0A26 /* ValidationCodeController.swift in Sources */,
+				2846866E1F31E2AA000DB63C /* HeaderSublistTableViewCell.swift in Sources */,
+				182A107E1EE48861004DFDF6 /* NewCommentController.swift in Sources */,
 				187503581EAF403B00AF0A26 /* PhoneNumberController.swift in Sources */,
+				18E991F61EE5B355005EC774 /* SearchCell.swift in Sources */,
+				1806EBAC1ED13E5B00ED6828 /* ProfileController.swift in Sources */,
+				28F563BD1ED921CA005B6A32 /* ProfileCollectionViewCell.swift in Sources */,
 				187503621EAFB4A200AF0A26 /* UtilityClass.swift in Sources */,
 				18928BFD1EB6856300982C8B /* HeaderSelectedController.swift in Sources */,
 				18928BFA1EB663EB00982C8B /* SubListCell.swift in Sources */,
 				1808184D1EBE405800888934 /* PlayListController.swift in Sources */,
 				18AAAF971EC5B91000191355 /* CatItemCell.swift in Sources */,
+				182A107A1EE4209B004DFDF6 /* CommentsViewController.swift in Sources */,
 				1875034C1EAF2D2B00AF0A26 /* VitrinCell.swift in Sources */,
+				2846866A1F31E180000DB63C /* SublistTableViewCell.swift in Sources */,
 				18F7C3911EBAFFD7002AF4AA /* PlayerCell.swift in Sources */,
+				18CB99CD1EE19B6F006CC669 /* ICrasuelViewController.swift in Sources */,
 				187503501EAF315400AF0A26 /* CollectionViewCell.swift in Sources */,
 				18D5498E1EB20644009BCD15 /* testViewController.swift in Sources */,
 				1875035E1EAF9CA100AF0A26 /* SendObjects.swift in Sources */,
+				289A54351F2BCF0F00C71F0E /* RecordsCell.swift in Sources */,
+				1843C2711EEB306F0060939D /* JukeBoxClass.swift in Sources */,
 				187503491EAF2B5500AF0A26 /* HomeViewController.swift in Sources */,
 				18F7C38D1EBAFA67002AF4AA /* PlayerViewController.swift in Sources */,
 				180818501EBE410600888934 /* PlayListCell.swift in Sources */,
+				182A107C1EE420FE004DFDF6 /* CommentCell.swift in Sources */,
+				289A54331F2BADE800C71F0E /* RecorderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,12 +758,15 @@
 			baseConfigurationReference = C75C2B6743D919EED96F34BB /* Pods-RadioLadan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FGG7GRA53N;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UJ8CH22PZU;
 				INFOPLIST_FILE = RadioLadan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanProjecForladanOilll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RadioLadan/RadioLadan-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -656,12 +776,14 @@
 			baseConfigurationReference = C607900463E8AE1031241A38 /* Pods-RadioLadan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FGG7GRA53N;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UJ8CH22PZU;
 				INFOPLIST_FILE = RadioLadan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahdi.RadioLadanProjecForladanOilll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RadioLadan/RadioLadan-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

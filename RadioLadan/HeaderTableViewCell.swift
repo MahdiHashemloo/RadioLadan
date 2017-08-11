@@ -24,6 +24,7 @@ class HeaderTableViewCell: UITableViewCell {
     
     
     var cityName : String?
+    var header_Id = ""
     var sectionNumber : Int?
     var cityId : Int?
      var delegate : HeaderTableViewCellDelegate?

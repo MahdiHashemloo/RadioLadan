@@ -22,7 +22,7 @@ class PhoneNumberController: UIViewController,UITextFieldDelegate,numberReq {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+       // self.navigationController?.isNavigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,29 +31,39 @@ class PhoneNumberController: UIViewController,UITextFieldDelegate,numberReq {
     }
     
     @IBAction func countinueButton(_ sender: Any) {
-        let numObj = NumRegister()
-        numObj.mobile = numberTxtField.text!
-        let deviceInfoObj = Device_info()
-        deviceInfoObj.sui = UIDevice.current.identifierForVendor!.uuidString
+        if numberTxtField.text?.characters.count == 11 {
         
-        deviceInfoObj.model = UIDevice.current.name
-        numObj.device_info?.append(deviceInfoObj)
+            let numObj = NumRegister()
+            numObj.mobile = numberTxtField.text!
+            let deviceInfoObj = Device_info()
+            deviceInfoObj.sui = UIDevice.current.identifierForVendor!.uuidString
+            
+            deviceInfoObj.model = UIDevice.current.name
+            numObj.device_info?.append(deviceInfoObj)
+             let validationCodeController = self.storyboard?.instantiateViewController(withIdentifier: "ValidationCodeController") as! ValidationCodeController
+            validationCodeController.phoneNumber = numObj.mobile!
+            
+            
+            netObject.numberReq(numObject: numObj)
+            numberTxtField.endEditing(true)
 
-      
+        }else{
+        alert2(msg:"شماره تلفن اشتباه")
         
-        netObject.numberReq(numObject: numObj)
-    }
+        }
+          }
     
     func numberReqResponse(res: NumRegisterResponse) {
-        if res.code == "100"{
+      //  if res.code == "100"{
         
+           
             
             let validationCodeController = self.storyboard?.instantiateViewController(withIdentifier: "ValidationCodeController") as! ValidationCodeController
             validationCodeController.numRegResponse.user_id = res.user_id
             navigationController?.pushViewController(validationCodeController, animated: true)
          
         
-        }
+       // }
     }
 
     
@@ -66,7 +76,16 @@ class PhoneNumberController: UIViewController,UITextFieldDelegate,numberReq {
     
     
  
+    @IBAction func backBtn(_ sender: Any) {
+        
+        _ = navigationController?.popViewController(animated: true)
+        
+        
+    }
 
+    @IBAction func backButton(_ sender: Any) {
+           _ = navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

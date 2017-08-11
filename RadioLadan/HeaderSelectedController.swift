@@ -34,6 +34,9 @@ class HeaderSelectedController: UIViewController ,UITableViewDataSource,UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath) as! HeaderSelecedCell
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     
 
     /*

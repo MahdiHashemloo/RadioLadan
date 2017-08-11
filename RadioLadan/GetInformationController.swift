@@ -13,7 +13,7 @@ class GetInformationController: UIViewController,CompleteInfoPr {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var lnameField: UITextField!
     @IBOutlet weak var mailField: UITextField!
-    
+    var userId = "1"
     let netObject = NetworkManager()
     
     
@@ -32,6 +32,8 @@ class GetInformationController: UIViewController,CompleteInfoPr {
     func CompleteInfoResponse(res: CompleteInformationResponse) {
         print(res.code)
         print(res.message)
+        defaults.set("\(userId)", forKey: "user_id")
+        defaults.set(true, forKey: "isLogin")
         let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController];
         self.navigationController!.popToViewController(viewControllers[0], animated: false);
         
@@ -42,10 +44,14 @@ class GetInformationController: UIViewController,CompleteInfoPr {
         setProfileObj.fname = nameField.text!
         setProfileObj.lname = lnameField.text!
         setProfileObj.email = mailField.text!
+        setProfileObj.user_id = userId
         netObject.completeInformationCode(object: setProfileObj)
         
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
     
     /*
     // MARK: - Navigation

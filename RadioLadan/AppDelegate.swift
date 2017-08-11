@@ -7,7 +7,7 @@
 //sdf
 
 import UIKit
-
+import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+     // UINavigationBar.appearance().barStyle = .default
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
@@ -40,7 +42,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+/*
+     {
+     "user_id": "20",
+     "code": "201"
+     }
+     
+     
+     {
+     "user_id": "20",
+     "user_info": {
+     "fname": "",
+     "lname": "",
+     "email": "",
+     "avatar": "http:\/\/ihamsane.ir\/ladan\/admin\/uploads\/",
+     "gender": null,
+     "mobile": "09202031889"
+     },
+     "code": "100",
+     "message": "Operation was succsessful."
+     }
+     */
 
 }
 

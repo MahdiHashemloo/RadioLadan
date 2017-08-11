@@ -10,6 +10,15 @@ import UIKit
 
 class CatItemCell: UITableViewCell {
 
+    @IBOutlet weak var imageViewForCell: UIImageView!
+    
+    @IBOutlet weak var likeNum: UILabel!
+    
+    @IBOutlet weak var commentNum: UILabel!
+    
+    @IBOutlet weak var durationTimeLabel: UILabel!
+    
+    @IBOutlet weak var itemTitleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

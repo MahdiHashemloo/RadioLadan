@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ValidationCodeController: UIViewController ,validateCodePr{
+class ValidationCodeController: UIViewController ,validateCodePr,numberReq{
 
     
     let netObject = NetworkManager()
-    
+    var phoneNumber = ""
     var numRegResponse = NumRegisterResponse()
     
     @IBOutlet weak var validationCode: UITextField!
@@ -24,7 +24,7 @@ class ValidationCodeController: UIViewController ,validateCodePr{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+      //  self.navigationController?.isNavigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +33,7 @@ class ValidationCodeController: UIViewController ,validateCodePr{
     }
     
     @IBAction func countinueButton(_ sender: Any) {
+        validationCode.endEditing(true)
         let validateObj = ActivateCode()
         validateObj.user_id = numRegResponse.user_id
         validateObj.code = validationCode.text!
@@ -41,9 +42,28 @@ class ValidationCodeController: UIViewController ,validateCodePr{
     }
     
     func validateCodeResponse(res: ActivateCodeResponse) {
-        print(res.user_info!)
-        let getInformationController = self.storyboard?.instantiateViewController(withIdentifier: "GetInformationController") as! GetInformationController
-        navigationController?.pushViewController(getInformationController, animated: true)
+      //  print(res.user_info!)
+        print(res.code!)
+        if res.code == "102"{
+        
+        alert2(msg: "کد اشتباه")
+        } else if res.code! == "106" {
+                print("\(res.user_id!)")
+                defaults.set("\(res.user_id!)", forKey: "user_id")
+                defaults.set(true, forKey: "isLogin")
+                //ghablan sabte nam karde
+                let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController];
+                self.navigationController!.popToViewController(viewControllers[0], animated: false);
+            }else if res.code! == "100" {
+                //avalin bareshe
+                let getInformationController = self.storyboard?.instantiateViewController(withIdentifier: "GetInformationController") as! GetInformationController
+            getInformationController.userId = res.user_id!
+                navigationController?.pushViewController(getInformationController, animated: true)
+            }
+            
+
+        
+        
         
     }
 
@@ -52,9 +72,32 @@ class ValidationCodeController: UIViewController ,validateCodePr{
     }
     
     @IBAction func resendValidateCode(_ sender: Any) {
+        let numObj = NumRegister()
+        numObj.mobile = phoneNumber
+        let deviceInfoObj = Device_info()
+        deviceInfoObj.sui = UIDevice.current.identifierForVendor!.uuidString
         
+        deviceInfoObj.model = UIDevice.current.name
+        numObj.device_info?.append(deviceInfoObj)
+        let validationCodeController = self.storyboard?.instantiateViewController(withIdentifier: "ValidationCodeController") as! ValidationCodeController
+        validationCodeController.phoneNumber = numObj.mobile!
+        
+        
+        netObject.numberReq(numObject: numObj)
+
     }
     
+    
+    
+    func numberReqResponse(res: NumRegisterResponse) {
+        //  if res.code == "100"{
+        
+        self.numRegResponse.user_id = res.user_id
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

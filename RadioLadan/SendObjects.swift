@@ -10,6 +10,49 @@ import Foundation
 import ObjectMapper
 //1,2,3,4,5,6,7,12,17,19,22
 
+
+
+//getContentDetail:
+
+
+
+
+
+//add to favorite
+// {"type":"add_fave","section":"content","item_id":"1","user_id":"1"}
+
+
+
+class AddToFavorite: Mappable {
+    
+    var type: String?
+    var section: String?
+    var item_id: String?
+    var user_id: String?
+   
+    required init?(map: Map){
+        
+    }
+    init() {
+        
+        type = "add_fave"
+        section = "content"
+        item_id = ""
+        user_id = "1"
+      
+    }
+    
+    func mapping(map: Map) {
+        type <- map["type"]
+        section <- map["section"]
+        item_id <- map["item_id"]
+        user_id <- map["user_id"]
+ 
+    }
+}
+
+
+
 //upload:
 //{"type":"set_doc","title":"232","note":"wewew","festival_id":"wew","user_id":"23","format":"png"}
 
@@ -29,7 +72,7 @@ class UploadRequest: Mappable {
         type = "set_doc"
         title = "vitrin"
         note = ""
-        user_id = ""
+        user_id = "1"
         festival_id = ""
         format = ""
     }
@@ -50,6 +93,10 @@ class UploadRequest: Mappable {
 
 //get comment
 //	19.	{"type":"get_comments","section":"content,playlist,author","item_id":"1","user_id":"1"}
+//send:{"type":"get_comments","section":"content","item_id":"5","user_id":"2","page":"0","num":"10"}
+
+//res:
+//{"comments":[{"id":"3","user_avatar":"KO191542IW387483.jpg","user_fullname":"","content":"fgzsdfvzsd","date":"1396\/01\/29","time":"17:29:35"}],"code":"100","message":"Operation was succsessful."}
 
 class GetComment: Mappable {
     
@@ -57,7 +104,11 @@ class GetComment: Mappable {
     var section: String?
     var item_id: String?
     var user_id: String?
-    var comment : String?
+    var comments : [Comment]?
+    var page : String?
+    var num : String?
+    var code : String?
+    var message : String?
     required init?(map: Map){
         
     }
@@ -66,8 +117,12 @@ class GetComment: Mappable {
         type = "get_comments"
         section = "vitrin"
         item_id = ""
-        user_id = ""
-        comment = ""
+        user_id = "1"
+        comments = [Comment]()
+        page = "0"
+        num = "10"
+        code = ""
+        message = ""
     }
     
     func mapping(map: Map) {
@@ -75,12 +130,46 @@ class GetComment: Mappable {
         section <- map["section"]
         item_id <- map["item_id"]
         user_id <- map["user_id"]
-        comment <- map["comment"]
+        comments <- map["comments"]
+        page <- map["page"]
+        num <- map["num"]
+        code <- map["code"]
+        message <- map["message"]
     }
 }
 
 
-
+//{"comments":[{"id":"3","user_avatar":"KO191542IW387483.jpg","user_fullname":"","content":"fgzsdfvzsd","date":"1396\/01\/29","time":"17:29:35"}],"code":"100","message":"Operation was succsessful."}
+class Comment: Mappable {
+    
+    var id: String?
+    var user_avatar: String?
+    var user_fullname: String?
+    var content: String?
+    var date : String?
+    var time : String?
+    required init?(map: Map){
+        
+    }
+    init() {
+        
+        id = "get_comments"
+        user_avatar = "vitrin"
+        user_fullname = ""
+        content = ""
+        date = ""
+        time = ""
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        user_avatar <- map["user_avatar"]
+        user_fullname <- map["user_fullname"]
+        content <- map["content"]
+        date <- map["date"]
+        time <- map["time"]
+    }
+}
 
 
 //setcomment
@@ -92,16 +181,20 @@ class SetComment: Mappable {
     var item_id: String?
     var user_id: String?
     var comment : String?
+    var code : String?
+    var message : String?
     required init?(map: Map){
         
     }
     init() {
         
         type = "set_comments"
-        section = "vitrin"
+        section = "content"
         item_id = ""
-        user_id = ""
+        user_id = "1"
         comment = ""
+        code = ""
+        message = ""
     }
     
     func mapping(map: Map) {
@@ -110,6 +203,8 @@ class SetComment: Mappable {
         item_id <- map["item_id"]
         user_id <- map["user_id"]
         comment <- map["comment"]
+        code <- map["code"]
+        message <- map["message"]
     }
 }
 
@@ -117,8 +212,44 @@ class SetComment: Mappable {
 
 
 
+// MARK: ==========newPlayList============
+//{"type":"add_playlist","title":"لیست پخش عید","note":"توضیحات","user_id":"1"}
+class NewPlayList: Mappable {
+    
+    var type: String?
+    var title: String?
+    var note: String?
+   // var place: String?
+    var user_id : String?
+    required init?(map: Map){
+        
+    }
+    init() {
+        
+        type = "add_to_playlist"
+        title = "name"
+        note = ""
+   //     place = ""
+        user_id = "1"
+    }
+    
+    func mapping(map: Map) {
+        type <- map["type"]
+        title <- map["title"]
+        note <- map["note"]
+   //     place <- map["place"]
+        user_id <- map["user_id"]
+    }
+}
 
-
+/*
+ "playlist_id": "13",
+	"place": "1",
+	"user_id": "11",
+	"type": "add_to_playlist",
+	"content_id": "0"
+ }
+ */
 //add to playlist:12{"type":"add_to_playlist","playlist_id":"2","content_id":"1","place":"2","user_id":"1"}
 class AddToPlayList: Mappable {
     
@@ -135,8 +266,8 @@ class AddToPlayList: Mappable {
         type = "add_to_playlist"
         playlist_id = "vitrin"
         content_id = ""
-        place = ""
-        user_id = ""
+        place = "1"
+        user_id = "1"
     }
     
     func mapping(map: Map) {
@@ -193,6 +324,7 @@ class GetMusicFromVitrin: Mappable {
     var refferer_type: String?
     var id: String?
     var refferer_id: String?
+    var user_id : String?
        required init?(map: Map){
         
     }
@@ -202,6 +334,7 @@ class GetMusicFromVitrin: Mappable {
         refferer_type = "vitrin"
         id = ""
         refferer_id = ""
+        user_id = "1"
             }
     
     func mapping(map: Map) {
@@ -209,15 +342,48 @@ class GetMusicFromVitrin: Mappable {
         refferer_type <- map["refferer_type"]
         id <- map["id"]
         refferer_id <- map["refferer_id"]
+        user_id <- map["user_id"]
                
     }
 }
 
+//searchItem
+//{"type":"content_list","list_type":"search","user_id":"20","key_word":"کله","page":"0","num":"10"}
 
 
 
 
-
+class SearchItem: Mappable {
+    
+    var type: String?
+    var list_type: String?
+    var key_word: String?
+    var page: String?
+    var user_id : String?
+    var num : String?
+    required init?(map: Map){
+        
+    }
+    init() {
+        
+        type = "content_list"
+        list_type = "search"
+        key_word = ""
+        page = "0"
+        user_id = "1"
+        num = "10"
+    }
+    
+    func mapping(map: Map) {
+        type <- map["type"]
+        list_type <- map["list_type"]
+        key_word <- map["key_word"]
+        page <- map["page"]
+        user_id <- map["user_id"]
+        num <- map["num"]
+        
+    }
+}
 
 
 
@@ -235,7 +401,10 @@ class GetContentList: Mappable {
     var key_word: String?
     var page: String?
     var num : String?
-    required init?(map: Map){
+    var sort_type : String?
+    //popular//newest//most_view
+    required init?(map: Map)
+    {
         
     }
     init() {
@@ -243,10 +412,11 @@ class GetContentList: Mappable {
         type = "content_list"
         list_type = "vitrin"
         id = ""
-        user_id = ""
+        user_id = "1"
         key_word = ""
         page = "0"
         num = "10"
+        sort_type = ""
     }
     
     func mapping(map: Map) {
@@ -257,6 +427,7 @@ class GetContentList: Mappable {
         key_word <- map["key_word"]
         page <- map["mobile"]
         num <- map["num"]
+        sort_type <- map["sort_type"]
         
     }
 }
@@ -299,7 +470,7 @@ class GetProfile: Mappable {
     init() {
         
         type = "get_profile"
-        user_id = ""
+        user_id = "1"
         
     }
     
@@ -326,7 +497,7 @@ class SetProfile: Mappable {
     var lname: String?
     var email: String?
     var mobile: String?
-    
+    var avatar : String?
     required init?(map: Map){
         
     }
@@ -335,9 +506,10 @@ class SetProfile: Mappable {
         type = "set_profile"
         user_id = ""//from server
         fname = ""
-        lname = "set_profile"
+        lname = ""
         email = ""
         mobile = ""
+        avatar = ""
         
     }
     
@@ -348,7 +520,7 @@ class SetProfile: Mappable {
         lname <- map["lname"]
         email <- map["email"]
         mobile <- map["mobile"]
-        
+        avatar <- map["avatar"]
         
     }
 }
@@ -377,7 +549,7 @@ class ActivateCode: Mappable {
     init() {
         
         type = "active_code"
-        user_id = ""
+        user_id = "1"
         code = ""
         
     }

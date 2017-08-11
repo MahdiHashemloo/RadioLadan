@@ -7,22 +7,36 @@
 //
 
 import Foundation
+//"https://radio.ladanoil.com/ws/ws.php"
+//"http://ihamsane.ir/ladan/ws/ws.php"
+let mainUrl = "https://radio.ladanoil.com/ws/ws.php"
 
-let mainUrl = "http://ihamsane.ir/ladan/ws/ws.php"
 var islogedIn = false
 var PlayingMode = false
 var vitrinContent = vitrinResponse()
+var shared_User_Id = "1"
+var currentItem = item()
+
+var playingOrPause = false
+
+
+let defaults = UserDefaults.standard
+
+
+
 class UtilityClass {
     
     
      /*
      Show customized activity indicator,
      actually add activity indicator to passing view
-     
+
+
      @param uiView - add activity indicator to this view
      */
     
     func isValidEmail(testStr:String) -> Bool {
+       
         print("validate emilId: \(testStr)")
         let emailRegEx = "^(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?(?:(?:(?:[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+(?:\\.[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+)*)|(?:\"(?:(?:(?:(?: )*(?:(?:[!#-Z^-~]|\\[|\\])|(?:\\\\(?:\\t|[ -~]))))+(?: )*)|(?: )+)\"))(?:@)(?:(?:(?:[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)(?:\\.[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)*)|(?:\\[(?:(?:(?:(?:(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))\\.){3}(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))))|(?:(?:(?: )*[!-Z^-~])*(?: )*)|(?:[Vv][0-9A-Fa-f]+\\.[-A-Za-z0-9._~!$&'()*+,;=:]+))\\])))(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?$"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)

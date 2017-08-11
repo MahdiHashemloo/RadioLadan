@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSans(FaNum)_Light.ttf">
+            <string>IRANSansFaNum-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderSublistTableViewCell" rowHeight="242" id="KGk-i7-Jjw" customClass="HeaderSublistTableViewCell" customModule="RadioLadan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="242"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="241.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-6b-AxB">
+                        <rect key="frame" x="100" y="48" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="Dr2-Jq-Spc"/>
+                            <constraint firstAttribute="width" constant="120" id="XA3-ae-OSx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7bH-4h-Iib">
+                        <rect key="frame" x="8" y="176" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fJ0-mJ-PQd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="IRANSansFaNum-Light" family="IRANSans(FaNum)" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Pue-Sd-eEz">
+                        <rect key="frame" x="8" y="205" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="sLN-XP-Nhr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="IRANSansFaNum-Light" family="IRANSans(FaNum)" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="7bH-4h-Iib" firstAttribute="top" secondItem="V2d-6b-AxB" secondAttribute="bottom" constant="8" id="2LR-xA-Rub"/>
+                    <constraint firstItem="Pue-Sd-eEz" firstAttribute="top" secondItem="7bH-4h-Iib" secondAttribute="bottom" constant="8" id="4MD-aa-SAG"/>
+                    <constraint firstAttribute="trailing" secondItem="7bH-4h-Iib" secondAttribute="trailing" constant="8" id="Cf3-4f-RrM"/>
+                    <constraint firstAttribute="trailing" secondItem="Pue-Sd-eEz" secondAttribute="trailing" constant="8" id="VsM-gS-V0q"/>
+                    <constraint firstItem="V2d-6b-AxB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerXWithinMargins" id="fHZ-3G-LTq"/>
+                    <constraint firstItem="V2d-6b-AxB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerYWithinMargins" constant="-13" id="ghO-dy-pzs"/>
+                    <constraint firstItem="7bH-4h-Iib" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="oQ3-tU-HHc"/>
+                    <constraint firstItem="Pue-Sd-eEz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xcH-TD-7S6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="userEmailLabel" destination="Pue-Sd-eEz" id="D4U-yT-88S"/>
+                <outlet property="userImage" destination="V2d-6b-AxB" id="pPr-Ax-Yrb"/>
+                <outlet property="userNamelabel" destination="7bH-4h-Iib" id="Met-cP-WQH"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="67" height="68"/>
+    </resources>
+</document>

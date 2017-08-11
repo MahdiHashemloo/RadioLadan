@@ -12,6 +12,8 @@ class SubListCell: UITableViewCell {
 
     //header
     @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet weak var headerNameLabel: UILabel!
+    @IBOutlet weak var headerEMailLabel: UILabel!
     
     //item
     @IBOutlet weak var itemImage: UIImageView!
